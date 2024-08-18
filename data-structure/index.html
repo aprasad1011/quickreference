@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<header>
-    <h1>QuickReference</h1>
-</header>
+<div id="header"></div>
 <div class="container">
     <h1>Data Structure Topics</h1>
     <div class="subtopics">
@@ -18,5 +16,14 @@
         <div class="subtopic"><a href="map.html">Map</a></div>
     </div>
 </div>
+
+<script>
+    // JavaScript to load the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
 </body>
 </html>

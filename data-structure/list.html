@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<header>
-    <h1>QuickReference</h1>
-</header>
+<div id="header"></div>
 <div class="container">
     <h1>List - QuickReference</h1>
     <div class="detail-content">
         <p><strong>List</strong> is a data structure that holds an ordered collection of items. Each item in the list can be accessed by its index, and lists can be manipulated by adding, removing, or sorting elements.</p>
     </div>
 </div>
+
+<script>
+    // JavaScript to load the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
 </body>
 </html>
