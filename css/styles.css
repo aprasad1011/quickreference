@@ -7,14 +7,32 @@ body {
     color: #333;
 }
 
+/* Sticky header styling */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
 /* Centering the content */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 80vh;
     text-align: center;
+    padding-top: 20px; /* Add padding to ensure content isn't hidden behind the sticky header */
 }
 
 /* Styling for the functional boxes */
